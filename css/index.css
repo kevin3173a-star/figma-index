@@ -1,0 +1,118 @@
+@import url('./reset.css');
+@import url('./common.css');
+
+/* 인덱스 페이지 내용 */
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #555;
+}
+
+.title>h2 {
+    font-size: 40px;
+    color:black;
+}
+
+.title>p {
+    padding-top: 10px;
+    color: #555;
+}
+/* /=======================header============================ */
+
+header{ position:fixed; top:0; left:0; width: 100%; background-color: #000000;}
+header>div{margin:0 auto; display: flex;  width: 1300px; align-items:center;
+    justify-content:space-between; padding:40px 0;} 
+/* 블럭 자신을 이동 / text-align:인라인 자식을 이동  */        
+header>div>h1{font-size:20px;}
+header>div>h1>a{color:white;}
+header>div>nav>a{color:white; padding:0 20px;
+font-size:20px; display:inline-block;}
+
+/* ===========================spot============================ */
+
+.spot{background: url('/0119site1/img/img_main-spot.jpg') 50% 50% / cover no-repeat;
+height: 100vh;justify-content:center;display: flex; align-items:center;
+}
+
+/* /전체구조에 대한 flex로 중앙정렬해야 중앙을 찾아감-txt가
+정렬되려면 부모인 spot에 줘야함.*/
+/* /1.발생문제-모든 컨텐츠를 화면에 중앙 정렬
+2.해결방법-모든 컨텐츠를 txt로 묶음,div부모 태그에 flex명령 */
+
+.txt{text-align:center;}
+.txt>b{color:white; font-size:60px;}
+.txt>p{color:white; font-size:18px;}
+.txt>a{background-color: #ffcaca; color:black;padding:10px 30px;
+border-radius:30px;display:inline-block;margin-top:40px;}
+.txt>a:hover{background-color: #ff7070; color:white;}
+
+
+
+/* /=====================about========================= */
+
+
+.about,
+.portfolio,
+.contact {
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* //인라인 요소 가운데로 text-align:center; 
+*/
+.about .content{display: flex;
+justify-content:center; align-items:center;
+margin:70px 0 0; gap:40px;}
+.about .content>figure{}
+.about .content>figure>p{background-color: #ffafaf;
+width: 170px; height: 170px;margin:0 auto;
+display: flex;justify-content:center;
+align-items:center; border-radius:30%;
+transition:0.3s;}
+.about .content>figure>p:hover{background-color: #ff5f5f;
+border-radius:50%;}
+.about .content>figure>p>img{width: 80px;}
+
+.about .content>figure>figcaption{margin-top:20px;}
+.about .content>figure>figcaption>b{font-size:24px;color:black;
+}
+.about .content>figure>figcaption>p{margin-top:10px;}
+
+
+
+
+/* /=====================portfolio========================= */
+
+.portfolio{background-color: #dbdbdb;}
+.portfolio .content{display: flex; flex-wrap:wrap; justify-content:center;
+margin-top:70px; gap:40px;}
+.portfolio .content>figure{width: 30%;}
+.portfolio .content>figure>p{overflow:hidden;transition:0.3s;}
+.portfolio .content>figure>p>img{width: 100%;transition:0.3s; }
+.portfolio .content>figure>p:hover>img{transform:scale(1.2);
+}
+.portfolio .content>figure>p:hover{border-radius:40px; opacity:90%;}
+
+.portfolio .content>figure>figcaption{margin:20px 0;}
+.portfolio .content>figure>figcaption>b{font-size:28px; color:black;}
+.portfolio .content>figure>figcaption>p{margin-top:5px;}
+
+
+
+/* ===========================contact======================================= */
+
+
+.contact{background-color: #8b8b8b;
+}
+.contact h2{color:white;}
+.contact p{color:white;}
+.contact .content{ display: flex;
+    justify-content:center; align-items:center;
+margin-top:70px;}
+   
+
+
+
+
