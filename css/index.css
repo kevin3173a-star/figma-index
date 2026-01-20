@@ -32,7 +32,7 @@ font-size:20px; display:inline-block;}
 
 /* ===========================spot============================ */
 
-.spot{background: url('/0119site1/img/img_main-spot.jpg') 50% 50% / cover no-repeat;
+.spot{background: url('../img/img_main-spot.jpg') 50% 50% / cover no-repeat;
 height: 100vh;justify-content:center;display: flex; align-items:center;
 }
 
